@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none">
+  <rect width="40" height="40" y="4" rx="12" fill="url(#logo-grad)"/>
+  <path d="M14 16L20 28L26 16M20 28V36" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 26L30 36" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="50" y="30" fill="#ffffff" font-family="'Inter', -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5">Yamid<tspan fill="#38bdf8">.dev</tspan></text>
+  <defs>
+    <linearGradient id="logo-grad" x1="0" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+</svg>

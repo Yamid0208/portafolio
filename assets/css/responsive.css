@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 1080px) {
+  .card-hero-profile {
+    grid-column: span 12;
+  }
+
+  .card-credentials {
+    grid-column: span 12;
+  }
+
+  .card-projects-showcase {
+    grid-column: span 6;
+  }
+
+  .card-services {
+    grid-column: span 6;
+  }
+
+  .card-profiles {
+    grid-column: span 6;
+  }
+
+  .card-stats {
+    grid-column: span 6;
+  }
+
+  .card-cta {
+    grid-column: span 12;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--bg-surface);
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px 24px;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    border-left: 1px solid var(--border-color);
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .card-projects-showcase,
+  .card-services,
+  .card-profiles,
+  .card-stats {
+    grid-column: span 12;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .bento-grid {
+    gap: 16px;
+  }
+
+  .bento-card {
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+
+  .card-hero-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+
+  .hero-avatar-box {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-name {
+    font-size: 28px;
+  }
+
+  .page-title {
+    font-size: 32px;
+  }
+
+  .cta-headline {
+    font-size: 30px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .services-icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-actions .theme-btn {
+    display: none; /* Keep header clean on small phones; CTA in hero and menu is visible */
+  }
+
+  .card-arrow-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+  }
+}

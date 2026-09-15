@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFondos" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="20" fill="url(#bgFondos)"/>
+  <rect x="1" y="1" width="598" height="378" rx="19" fill="none" stroke="rgba(99, 102, 241, 0.25)" stroke-width="1.5"/>
+
+  <!-- Top App Bar -->
+  <rect x="20" y="18" width="560" height="42" rx="10" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="42" cy="39" r="6" fill="#ef4444"/>
+  <circle cx="58" cy="39" r="6" fill="#eab308"/>
+  <circle cx="74" cy="39" r="6" fill="#22c55e"/>
+
+  <text x="100" y="44" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="13" font-weight="700">Manejo de Fondos de Inversión (FPV / FIC)</text>
+  <rect x="440" y="27" width="125" height="24" rx="12" fill="rgba(99, 102, 241, 0.2)" stroke="rgba(99, 102, 241, 0.5)"/>
+  <text x="454" y="43" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">ANGULAR 19 + RxJS</text>
+
+  <!-- Left Account Balance Summary Card -->
+  <g transform="translate(20, 72)">
+    <rect width="210" height="288" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.06)"/>
+    
+    <text x="18" y="28" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">SALDO DISPONIBLE</text>
+    <text x="18" y="58" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="22" font-weight="800">$500,000 COP</text>
+    
+    <line x1="18" y1="74" x2="192" y2="74" stroke="rgba(255,255,255,0.08)"/>
+    
+    <text x="18" y="98" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10.5" font-weight="700">OPERACIONES ACTIVAS</text>
+    
+    <rect x="18" y="112" width="174" height="42" rx="8" fill="#0f172a"/>
+    <text x="28" y="130" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">FONDO_ECOPETROL</text>
+    <text x="28" y="146" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">Mín: $125,000 COP</text>
+
+    <rect x="18" y="162" width="174" height="42" rx="8" fill="#0f172a"/>
+    <text x="28" y="180" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">FPV_BTG_PACTUAL</text>
+    <text x="28" y="196" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">Mín: $50,000 COP</text>
+
+    <rect x="18" y="214" width="174" height="56" rx="8" fill="rgba(34, 197, 94, 0.1)" stroke="rgba(34, 197, 94, 0.3)"/>
+    <text x="28" y="234" fill="#86efac" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10.5" font-weight="700">✓ Validación de Saldo</text>
+    <text x="28" y="254" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5">Control reactivo de vinculación</text>
+  </g>
+
+  <!-- Right Funds Management Table & Transactions -->
+  <g transform="translate(242, 72)">
+    <rect width="338" height="288" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.06)"/>
+
+    <text x="18" y="26" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="13" font-weight="700">Catálogo de Fondos &amp; Suscripciones</text>
+
+    <!-- Fund 1 -->
+    <g transform="translate(18, 40)">
+      <rect width="302" height="68" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.05)"/>
+      <text x="14" y="22" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11.5" font-weight="700">FPV_ACCIONES_DINAMICAS</text>
+      <text x="14" y="38" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">Categoría: Renta Variable · Notificación SMS/Email</text>
+      <rect x="14" y="46" width="90" height="16" rx="8" fill="rgba(56, 189, 248, 0.15)"/>
+      <text x="22" y="58" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="700">$100,000 COP</text>
+      <rect x="210" y="20" width="80" height="28" rx="6" fill="url(#violetGrad)"/>
+      <text x="224" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">Suscribir</text>
+    </g>
+
+    <!-- Fund 2 -->
+    <g transform="translate(18, 116)">
+      <rect width="302" height="68" rx="8" fill="#0f172a" stroke="rgba(255,255,255,0.05)"/>
+      <text x="14" y="22" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11.5" font-weight="700">FIC_RENTA_FIJA_GLOBAL</text>
+      <text x="14" y="38" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">Categoría: Conservador · Rentabilidad Estable</text>
+      <rect x="14" y="46" width="90" height="16" rx="8" fill="rgba(16, 185, 129, 0.15)"/>
+      <text x="24" y="58" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9" font-weight="700">$75,000 COP</text>
+      <rect x="210" y="20" width="80" height="28" rx="6" fill="#334155"/>
+      <text x="222" y="38" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">Cancelar</text>
+    </g>
+
+    <!-- Transaction History Strip -->
+    <g transform="translate(18, 194)">
+      <rect width="302" height="80" rx="8" fill="#0b0f19"/>
+      <text x="12" y="18" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">HISTORIAL CRONOLÓGICO DE TRANSACCIONES</text>
+      <text x="12" y="38" fill="#86efac" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">✓ Vinculación exitosa FPV_BTG (ID: TX-9042)</text>
+      <text x="12" y="54" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10">⚡ Cancelación y reintegro en tiempo real</text>
+      <text x="12" y="70" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5">Notificación automática despachada al usuario</text>
+    </g>
+  </g>
+</svg>

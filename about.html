@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Sobre Mí & Trayectoria | Yamid Rodríguez</title>
+  <meta name="description" content="Conoce la trayectoria profesional, experiencia en Michael Page y Datatools, habilidades técnicas y educación de Yamid José Rodríguez Rodríguez.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+  <script src="./assets/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- Header Area -->
+  <header class="header-area">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper" aria-label="Ir al inicio">
+        <svg class="logo-img" viewBox="0 0 160 48" fill="none" height="38" aria-label="Yamid.dev">
+          <rect width="40" height="40" y="4" rx="12" fill="url(#logo-grad)"/>
+          <path d="M14 16L20 28L26 16M20 28V36" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 26L30 36" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="50" y="30" class="logo-text-main" font-family="'Inter', -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5">Yamid<tspan class="logo-text-accent">.dev</tspan></text>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1e293b"/>
+              <stop offset="1" stop-color="#0f172a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="about.html" class="nav-link active">Sobre Mí</a></li>
+          <li><a href="works.html" class="nav-link">Proyectos</a></li>
+          <li><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Cambiar tema"></button>
+        <a href="contact.html" class="theme-btn">¡Hablemos!</a>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="page-badge">CONÓCEME MEJOR</span>
+      <h1 class="page-title">Sobre Mí &amp; Credenciales</h1>
+      <p class="page-subtitle">
+        Ingeniero de Sistemas y Front-End Angular Developer enfocado en crear software de alto impacto, rendimiento sobresaliente y arquitectura limpia.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content Bento Grid Layout -->
+  <main class="bento-section">
+    <div class="container">
+      <div class="bento-grid">
+
+        <!-- Perfil Bio Card (7 columns) -->
+        <article class="bento-card" style="grid-column: span 7;">
+          <div>
+            <span class="card-tag">PERFIL PROFESIONAL</span>
+            <h2 class="card-title">Yamid José Rodríguez Rodríguez</h2>
+            <p class="card-desc" style="font-size: 15px; margin-top: 16px; line-height: 1.7;">
+              Ingeniero de Sistemas con más de <strong>4 años de experiencia sólida</strong> en el desarrollo Web Front-End, especializado en el Framework de <strong>Angular (v14–21)</strong> y <strong>TypeScript</strong>. Experto en la creación de interfaces modernas, altamente responsivas y escalables mediante arquitecturas basadas en componentes, manejo de estado con <strong>RxJS/NgRx</strong> y diseño con CSS Grid, Flexbox y Tailwind CSS.
+            </p>
+            <p class="card-desc" style="font-size: 15px; margin-top: 14px; line-height: 1.7;">
+              Apasionado por la optimización del rendimiento (<strong>Core Web Vitals, Lazy Loading</strong>) y la accesibilidad (WCAG). Amplia experiencia integrando endpoints REST, sincronizando contratos con backends en <strong>.NET / C#</strong> y aprovechando herramientas de Inteligencia Artificial (GitHub Copilot, ChatGPT) para acelerar entregas bajo metodologías ágiles Scrum.
+            </p>
+          </div>
+          <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <span class="skill-tag" style="border-color: rgba(56, 189, 248, 0.4); color: var(--accent);">📍 Fundación, Magdalena, Colombia</span>
+            <span class="skill-tag">🎓 Ingeniero de Sistemas</span>
+            <span class="skill-tag">⚡ Angular v14 - v21</span>
+          </div>
+        </article>
+
+        <!-- Formación Académica Card (5 columns) -->
+        <article class="bento-card" style="grid-column: span 5;">
+          <div>
+            <span class="card-tag">FORMACIÓN ACADÉMICA</span>
+            <h2 class="card-title">Educación &amp; Título</h2>
+            <div class="timeline-list" style="margin-top: 24px;">
+              <div class="timeline-item">
+                <div class="timeline-date">2016 – 2021</div>
+                <div class="timeline-role">Ingeniería de Sistemas</div>
+                <div class="timeline-company">Universidad del Magdalena · Santa Marta, Colombia</div>
+                <p class="timeline-desc">
+                  Graduado con sólidas bases en algoritmia, ingeniería de software, bases de datos relacionales, estructuras de datos y metodologías de desarrollo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 24px; padding: 16px; background: rgba(56, 189, 248, 0.05); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 16px;">
+            <p style="font-size: 13px; color: var(--text-muted);">
+              "Menos fricción en la interfaz de usuario, más valor tangible para el negocio."
+            </p>
+          </div>
+        </article>
+
+        <!-- Experiencia Laboral Detallada (12 columns) -->
+        <article class="bento-card" style="grid-column: span 12;">
+          <div>
+            <span class="card-tag">TRAYECTORIA LABORAL</span>
+            <h2 class="card-title">Experiencia Profesional</h2>
+            
+            <div class="timeline-list" style="margin-top: 30px;">
+
+              <!-- Michael Page -->
+              <div class="timeline-item">
+                <div class="timeline-date">Septiembre 2025 – Julio 2026</div>
+                <div class="timeline-role">Desarrollador Front-End Angular / Full Stack</div>
+                <div class="timeline-company">Michael Page</div>
+                <ul class="timeline-desc">
+                  <li>Lideré el desarrollo e implementación del área Front-End para aplicaciones empresariales escalables utilizando <strong>Angular (v15–21)</strong> y <strong>TypeScript</strong>.</li>
+                  <li><strong>Mejoré los tiempos de carga y respuesta de la interfaz en un 30%</strong> mediante patrones de Lazy Loading, modularización de estados y consumo eficiente de APIs REST.</li>
+                  <li>Construí un sistema de diseño estandarizado basado en <strong>componentes reutilizables</strong>, formularios reactivos con validaciones complejas y control de errores en tiempo real.</li>
+                  <li>Colaboré en la integración fluida con servicios backend en <strong>.NET / C#</strong>, asegurando contratos de API limpios y una experiencia de usuario (UX) óptima.</li>
+                  <li>Aumenté la productividad de desarrollo mediante la adopción de herramientas IA (<strong>GitHub Copilot</strong>), manteniendo altos estándares de calidad bajo flujo <strong>GitFlow</strong>.</li>
+                </ul>
+              </div>
+
+              <!-- Datatools -->
+              <div class="timeline-item">
+                <div class="timeline-date">Diciembre 2022 – Septiembre 2025</div>
+                <div class="timeline-role">Desarrollador Front-End Angular</div>
+                <div class="timeline-company">Datatools</div>
+                <ul class="timeline-desc">
+                  <li>Desarrollé <strong>más de 15 módulos interactivos con Angular</strong>, implementando arquitecturas limpias y patrones de diseño modernos.</li>
+                  <li>Diseñé interfaces completamente responsivas y con alta adaptabilidad usando CSS Grid, Flexbox, SCSS y librerías de componentes como <strong>Angular Material</strong>.</li>
+                  <li>Aseguré flujos de navegación protegidos e integración segura consumiendo Web APIs con <strong>autenticación por JWT</strong>.</li>
+                  <li>Participé activamente en metodologías <strong>Scrum</strong>, liderando la revisión de código (Pull Requests) en Git para mantener la cohesión visual y técnica del sistema.</li>
+                </ul>
+              </div>
+
+              <!-- Ticxar -->
+              <div class="timeline-item">
+                <div class="timeline-date">Octubre 2022 – Diciembre 2022</div>
+                <div class="timeline-role">Desarrollador Front-End Angular</div>
+                <div class="timeline-company">Ticxar</div>
+                <ul class="timeline-desc">
+                  <li>Creé maquetaciones web de alto impacto e interactividad combinando <strong>Angular y Tailwind CSS</strong>.</li>
+                  <li>Gestión eficiente del flujo de datos asíncrono y reactivo mediante la suite de operadores de <strong>RxJS</strong>.</li>
+                  <li>Diseño e implementación de <strong>pruebas unitarias</strong> para asegurar la consistencia funcional de los componentes clave.</li>
+                </ul>
+              </div>
+
+              <!-- SOA -->
+              <div class="timeline-item">
+                <div class="timeline-date">Marzo 2021 – Septiembre 2021</div>
+                <div class="timeline-role">Practicante QA &amp; Automatización</div>
+                <div class="timeline-company">SOA</div>
+                <ul class="timeline-desc">
+                  <li>Automatización de pruebas de interfaz de usuario (UI) con <strong>Selenium</strong>, garantizando estándares de usabilidad e identificación temprana de regresiones de software.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- Habilidades Técnicas Desglosadas (12 columns) -->
+        <article class="bento-card" id="skills" style="grid-column: span 12;">
+          <div>
+            <span class="card-tag">ARSENAL TÉCNICO</span>
+            <h2 class="card-title">Habilidades &amp; Tecnologías</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 28px;">
+              
+              <!-- Frontend Core -->
+              <div class="skills-category">
+                <h4>Frontend Core</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Angular (v10–21)</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">JavaScript (ES6+)</span>
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3 / SCSS</span>
+                  <span class="skill-tag">RxJS Observables</span>
+                  <span class="skill-tag">NgRx State Management</span>
+                  <span class="skill-tag">Figma</span>
+                </div>
+              </div>
+
+              <!-- UI & Estilos -->
+              <div class="skills-category">
+                <h4>UI &amp; Estilos</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Tailwind CSS</span>
+                  <span class="skill-tag">Angular Material</span>
+                  <span class="skill-tag">CSS Grid</span>
+                  <span class="skill-tag">Flexbox</span>
+                  <span class="skill-tag">Bootstrap</span>
+                  <span class="skill-tag">Responsive Web Design</span>
+                  <span class="skill-tag">UI/UX Parsing</span>
+                </div>
+              </div>
+
+              <!-- Integración & Testing -->
+              <div class="skills-category">
+                <h4>Integración &amp; Testing</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">RESTful APIs</span>
+                  <span class="skill-tag">JWT Authentication</span>
+                  <span class="skill-tag">Integración .NET / C#</span>
+                  <span class="skill-tag">Jasmine</span>
+                  <span class="skill-tag">Karma</span>
+                  <span class="skill-tag">Selenium</span>
+                  <span class="skill-tag">Postman &amp; Swagger</span>
+                </div>
+              </div>
+
+              <!-- Herramientas & Ágil -->
+              <div class="skills-category">
+                <h4>Herramientas &amp; Ágil</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git / GitHub</span>
+                  <span class="skill-tag">GitFlow</span>
+                  <span class="skill-tag">Azure DevOps</span>
+                  <span class="skill-tag">CI/CD Pipelines</span>
+                  <span class="skill-tag">GitHub Copilot</span>
+                  <span class="skill-tag">ChatGPT</span>
+                  <span class="skill-tag">Scrum / Kanban</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-area">
+    <div class="container footer-inner">
+      <ul class="footer-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre Mí</a></li>
+        <li><a href="works.html">Proyectos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+      <p class="footer-copy">
+        © 2026 Yamid Rodríguez. Desarrollador Front-End Angular · Colombia.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

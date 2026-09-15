@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSGI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dd0031"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="20" fill="url(#bgSGI)"/>
+  <rect x="1" y="1" width="598" height="378" rx="19" fill="none" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1.5"/>
+
+  <!-- Top App Bar -->
+  <rect x="20" y="18" width="560" height="42" rx="10" fill="#111827" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="42" cy="39" r="6" fill="#ef4444"/>
+  <circle cx="58" cy="39" r="6" fill="#eab308"/>
+  <circle cx="74" cy="39" r="6" fill="#22c55e"/>
+
+  <rect x="100" y="27" width="220" height="24" rx="6" fill="#1f2937"/>
+  <text x="112" y="43" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="500">inventory-system.vercel.app/pos</text>
+
+  <!-- Live SGI Status Badge -->
+  <rect x="460" y="27" width="105" height="24" rx="12" fill="rgba(34, 197, 94, 0.15)" stroke="rgba(34, 197, 94, 0.4)"/>
+  <circle cx="474" cy="39" r="4" fill="#22c55e"/>
+  <text x="485" y="43" fill="#86efac" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10.5" font-weight="700">SGI LIVE DEMO</text>
+
+  <!-- Metric KPI Cards -->
+  <g transform="translate(20, 72)">
+    <!-- Card 1 -->
+    <rect width="176" height="74" rx="10" fill="#111827" stroke="rgba(255,255,255,0.06)"/>
+    <text x="14" y="24" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">PRODUCTOS EN STOCK</text>
+    <text x="14" y="52" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="20" font-weight="800">1,842</text>
+    <rect x="116" y="34" width="48" height="20" rx="6" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="122" y="48" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">+14.2%</text>
+
+    <!-- Card 2 -->
+    <rect x="192" width="176" height="74" rx="10" fill="#111827" stroke="rgba(255,255,255,0.06)"/>
+    <text x="206" y="24" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">VENTAS DEL DÍA (POS)</text>
+    <text x="206" y="52" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="20" font-weight="800">$4,850.00</text>
+
+    <!-- Card 3 -->
+    <rect x="384" width="176" height="74" rx="10" fill="#111827" stroke="rgba(255,255,255,0.06)"/>
+    <text x="398" y="24" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">ARQUITECTURA</text>
+    <text x="398" y="52" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="16" font-weight="800">.NET 8 · Angular</text>
+  </g>
+
+  <!-- Stock & Operations Table Mockup -->
+  <g transform="translate(20, 158)">
+    <rect width="560" height="202" rx="12" fill="#0f172a" stroke="rgba(56, 189, 248, 0.15)"/>
+    
+    <!-- Table Header -->
+    <rect x="12" y="12" width="536" height="32" rx="6" fill="#1e293b"/>
+    <text x="26" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">CÓDIGO</text>
+    <text x="100" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">DESCRIPCIÓN DE PRODUCTO</text>
+    <text x="290" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">CATEGORÍA</text>
+    <text x="390" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">STOCK</text>
+    <text x="470" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">ESTADO</text>
+
+    <!-- Table Rows -->
+    <g transform="translate(12, 52)">
+      <rect width="536" height="30" rx="4" fill="rgba(255,255,255,0.02)"/>
+      <text x="14" y="20" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">SKU-8921</text>
+      <text x="88" y="20" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">Servidor Enterprise 2U Dual Xeon</text>
+      <text x="278" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">Hardware</text>
+      <text x="378" y="20" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">42 uds</text>
+      <rect x="454" y="6" width="68" height="18" rx="9" fill="rgba(34, 197, 94, 0.15)"/>
+      <text x="466" y="19" fill="#86efac" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5" font-weight="700">ÓPTIMO</text>
+    </g>
+
+    <g transform="translate(12, 88)">
+      <rect width="536" height="30" rx="4" fill="rgba(255,255,255,0.04)"/>
+      <text x="14" y="20" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">SKU-4402</text>
+      <text x="88" y="20" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">Switch Administrable 48 Puertos PoE</text>
+      <text x="278" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">Redes</text>
+      <text x="378" y="20" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">18 uds</text>
+      <rect x="454" y="6" width="68" height="18" rx="9" fill="rgba(34, 197, 94, 0.15)"/>
+      <text x="466" y="19" fill="#86efac" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5" font-weight="700">ÓPTIMO</text>
+    </g>
+
+    <g transform="translate(12, 124)">
+      <rect width="536" height="30" rx="4" fill="rgba(255,255,255,0.02)"/>
+      <text x="14" y="20" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">SKU-1099</text>
+      <text x="88" y="20" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="600">Módulo Óptico Transceiver 10Gbps</text>
+      <text x="278" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11">Accesorios</text>
+      <text x="378" y="20" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="11" font-weight="700">5 uds</text>
+      <rect x="454" y="6" width="68" height="18" rx="9" fill="rgba(245, 158, 11, 0.15)"/>
+      <text x="464" y="19" fill="#fcd34d" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="9.5" font-weight="700">BAJO STK</text>
+    </g>
+
+    <!-- Bottom Action Ribbon -->
+    <g transform="translate(12, 162)">
+      <rect width="536" height="28" rx="6" fill="#111827"/>
+      <text x="16" y="18" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="600">Clean Architecture .NET 8 · Angular Signals · SQL Server</text>
+      <text x="440" y="18" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto" font-size="10" font-weight="700">Punto de Venta POS ⚡</text>
+    </g>
+  </g>
+</svg>

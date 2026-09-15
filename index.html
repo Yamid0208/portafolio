@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Yamid Rodríguez | Front-End Angular Developer</title>
+  <meta name="description" content="Portafolio profesional de Yamid José Rodríguez Rodríguez. Ingeniero de Sistemas y Front-End Angular Developer especializado en Angular (v14-21), TypeScript, RxJS y arquitecturas escalables.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+
+  <!-- Theme Script (Inline to prevent FOUC) -->
+  <script src="./assets/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- Header Area -->
+  <header class="header-area">
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper" aria-label="Ir al inicio">
+        <svg class="logo-img" viewBox="0 0 160 48" fill="none" height="38" aria-label="Yamid.dev">
+          <rect width="40" height="40" y="4" rx="12" fill="url(#logo-grad)"/>
+          <path d="M14 16L20 28L26 16M20 28V36" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 26L30 36" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="50" y="30" class="logo-text-main" font-family="'Inter', -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5">Yamid<tspan class="logo-text-accent">.dev</tspan></text>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1e293b"/>
+              <stop offset="1" stop-color="#0f172a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="about.html" class="nav-link">Sobre Mí</a></li>
+          <li><a href="works.html" class="nav-link">Proyectos</a></li>
+          <li><a href="contact.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Dark/Light Mode Switcher -->
+        <button class="theme-toggle-btn" aria-label="Cambiar tema">
+          <!-- Populated by theme.js -->
+        </button>
+
+        <a href="contact.html" class="theme-btn">¡Hablemos!</a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="mobile-nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bento Grid Main Content -->
+  <main class="bento-section">
+    <div class="container">
+      <div class="bento-grid">
+
+        <!-- 1. Hero Profile Bento Card (7 columns) -->
+        <article class="bento-card card-hero-profile">
+          <div class="hero-avatar-box">
+            <img src="./assets/images/avatar.svg" alt="Retrato de Yamid Rodríguez" width="190" height="190">
+          </div>
+          <div class="hero-info">
+            <div class="hero-role-pill">
+              <span>✦</span> FRONT-END ANGULAR DEVELOPER
+            </div>
+            <h1 class="hero-name">Yamid Rodríguez.</h1>
+            <p class="hero-bio">
+              Ingeniero de Sistemas con más de 4 años de experiencia construyendo interfaces empresariales escalables, diseño con CSS Grid &amp; Tailwind, y gestión de estados reactivos con RxJS y NgRx.
+            </p>
+          </div>
+          <a href="about.html" class="card-arrow-btn" aria-label="Ver perfil completo de Yamid">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 2. Credentials & Background Card (5 columns) -->
+        <article class="bento-card card-credentials">
+          <div>
+            <span class="card-tag">MÁS SOBRE MÍ</span>
+            <h2 class="card-title">Credenciales &amp; Trayectoria</h2>
+            <div class="credentials-preview">
+              <div class="credentials-preview-item">
+                <div class="cred-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div class="cred-text">
+                  <h4>Michael Page &amp; Datatools</h4>
+                  <p>Líder Front-End &amp; +15 módulos Angular</p>
+                </div>
+              </div>
+              <div class="credentials-preview-item">
+                <div class="cred-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="cred-text">
+                  <h4>Ingeniería de Sistemas</h4>
+                  <p>Universidad del Magdalena (2016 – 2021)</p>
+                </div>
+              </div>
+            </div>
+            <p class="card-desc">Especializado en arquitecturas limpias, componentes desacoplados y Core Web Vitals.</p>
+          </div>
+          <a href="about.html" class="card-arrow-btn" aria-label="Ver trayectoria completa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 3. Infinite Marquee Ticker (12 columns) -->
+        <div class="card-marquee">
+          <div class="marquee-track">
+            <div class="marquee-content">
+              <div class="marquee-item"><span class="marquee-star">✦</span> ANGULAR (v14–21) &amp; TYPESCRIPT</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> ARQUITECTURAS REACTIVAS RxJS &amp; NgRx</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> -30% TIEMPOS DE CARGA CON LAZY LOADING</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> SISTEMAS DE DISEÑO &amp; TAILWIND CSS</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> INTEGRACIÓN .NET / C# &amp; SEGURIDAD JWT</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> TESTING CON JASMINE &amp; KARMA</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> FLUJO GITFLOW &amp; ASISTENCIA IA</div>
+            </div>
+            <!-- Duplicate for seamless continuous loop -->
+            <div class="marquee-content" aria-hidden="true">
+              <div class="marquee-item"><span class="marquee-star">✦</span> ANGULAR (v14–21) &amp; TYPESCRIPT</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> ARQUITECTURAS REACTIVAS RxJS &amp; NgRx</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> -30% TIEMPOS DE CARGA CON LAZY LOADING</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> SISTEMAS DE DISEÑO &amp; TAILWIND CSS</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> INTEGRACIÓN .NET / C# &amp; SEGURIDAD JWT</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> TESTING CON JASMINE &amp; KARMA</div>
+              <div class="marquee-item"><span class="marquee-star">✦</span> FLUJO GITFLOW &amp; ASISTENCIA IA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Featured Projects Showcase Card (4 columns) -->
+        <article class="bento-card card-projects-showcase">
+          <div>
+            <div class="project-thumb-preview">
+              <img src="./assets/images/projects/project1.svg" alt="Preview del Sistema de Gestión de Inventario SGI" width="300" height="165">
+            </div>
+            <span class="card-tag">PROYECTOS EN GITHUB</span>
+            <h3 class="card-title">Proyectos &amp; Demos</h3>
+            <p class="card-desc">SGI POS (.NET 8 &amp; Angular), Gestor de Fondos FPV/FIC y Aplicaciones Web Interactivas.</p>
+          </div>
+          <a href="works.html" class="card-arrow-btn" aria-label="Explorar proyectos desarrollados en GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 5. Specialization / Services Offering Card (4 columns) -->
+        <article class="bento-card card-services">
+          <div>
+            <div class="services-icons-grid">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span>Angular Core</span>
+              </div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+                <span>CSS Grid/UI</span>
+              </div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Core Vitals</span>
+              </div>
+            </div>
+            <span class="card-tag">ESPECIALIZACIÓN</span>
+            <h3 class="card-title">Servicios &amp; Enfoque</h3>
+            <p class="card-desc">Creación de SPAs robustas, modularización, formularios reactivos y componentes accesibles (WCAG).</p>
+          </div>
+          <a href="about.html#skills" class="card-arrow-btn" aria-label="Ver detalles de habilidades">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 6. Profiles & Social Presence Card (4 columns) -->
+        <article class="bento-card card-profiles">
+          <div>
+            <div class="social-links-grid">
+              <a href="https://github.com/Yamid0208" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Perfil de GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/yamid-rodriguez" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Perfil de LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2m1.39 9.74v-8.37H5.07v8.37z"/>
+                </svg>
+              </a>
+              <a href="mailto:yamid0208@gmail.com" class="social-circle-btn" aria-label="Enviar correo a yamid0208@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <span class="card-tag">PERFILES</span>
+            <h3 class="card-title">Conectemos</h3>
+            <p class="card-desc">Disponible para proyectos freelance, consultoría front-end y oportunidades remotas.</p>
+          </div>
+          <a href="contact.html" class="card-arrow-btn" aria-label="Ir a página de contacto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- 7. Key Stats Metrics Card (5 columns) -->
+        <article class="bento-card card-stats">
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-number">04+</div>
+              <div class="stat-label">Años de<br>Experiencia</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">+15</div>
+              <div class="stat-label">Módulos<br>Empresariales</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">30%</div>
+              <div class="stat-label">Optimización<br>Carga Web</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Grand CTA (Let's Work Together) Card (7 columns) -->
+        <article class="bento-card card-cta">
+          <div>
+            <span class="card-tag">¿TIENES UN PROYECTO O UNA VACANTE?</span>
+            <h2 class="cta-headline">Construyamos algo <span>excepcional</span> juntos.</h2>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="theme-btn">Iniciar Conversación 🤝</a>
+            <a href="./assets/cv/Yamid_Rodriguez_CV.pdf" target="_blank" class="theme-btn theme-btn-secondary" download>Descargar CV (PDF)</a>
+          </div>
+          <a href="contact.html" class="card-arrow-btn" aria-label="Contactar a Yamid">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-area">
+    <div class="container footer-inner">
+      <ul class="footer-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre Mí</a></li>
+        <li><a href="works.html">Proyectos</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+      <p class="footer-copy">
+        © 2026 Yamid Rodríguez. Desarrollado con HTML5, CSS3 y JavaScript moderno inspirado en Gridx.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
