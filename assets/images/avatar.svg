@@ -15,12 +15,12 @@
     <linearGradient id="vignetteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#000000" stop-opacity="0.15"/>
       <stop offset="65%" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
     </linearGradient>
 
     <!-- Badge Drop Shadows -->
     <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.65"/>
     </filter>
   </defs>
 
@@ -51,12 +51,26 @@
     <text x="32" y="22" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">DISPONIBLE</text>
   </g>
 
-  <!-- Angular Tech Shield Badge (Bottom Right) -->
-  <g transform="translate(305, 305)" filter="url(#badgeShadow)">
-    <circle cx="36" cy="36" r="36" fill="#0f172a" stroke="rgba(221, 0, 49, 0.5)" stroke-width="2"/>
-    <circle cx="36" cy="36" r="30" fill="#1e293b"/>
+  <!-- Dual Tech Badges (Bottom Right): React + Angular -->
+  <!-- 1. React Tech Badge -->
+  <g transform="translate(254, 316)" filter="url(#badgeShadow)">
+    <circle cx="30" cy="30" r="29" fill="#0f172a" stroke="rgba(0, 216, 255, 0.45)" stroke-width="2"/>
+    <circle cx="30" cy="30" r="24" fill="#1e293b"/>
+    <!-- React Atom Icon -->
+    <g transform="translate(30, 30)">
+      <ellipse rx="15" ry="5.8" fill="none" stroke="#00d8ff" stroke-width="1.6"/>
+      <ellipse rx="15" ry="5.8" fill="none" stroke="#00d8ff" stroke-width="1.6" transform="rotate(60)"/>
+      <ellipse rx="15" ry="5.8" fill="none" stroke="#00d8ff" stroke-width="1.6" transform="rotate(120)"/>
+      <circle r="2.8" fill="#00d8ff"/>
+    </g>
+  </g>
+
+  <!-- 2. Angular Tech Shield Badge -->
+  <g transform="translate(322, 316)" filter="url(#badgeShadow)">
+    <circle cx="30" cy="30" r="29" fill="#0f172a" stroke="rgba(221, 0, 49, 0.55)" stroke-width="2"/>
+    <circle cx="30" cy="30" r="24" fill="#1e293b"/>
     <!-- Angular Shield Path -->
-    <g transform="translate(14, 12) scale(1.15)">
+    <g transform="translate(13, 11) scale(0.95)">
       <path d="M19 3 L35 9 L31 29 L19 36 L7 29 L3 9 Z" fill="#dd0031"/>
       <path d="M19 3 L35 9 L31 29 L19 36 Z" fill="#c3002f"/>
       <path d="M19 8 L11 26 H15 L16.8 22 H21.2 L23 26 H27 L19 8 Z M19 14.5 L20.5 18.5 H17.5 L19 14.5 Z" fill="#ffffff"/>
