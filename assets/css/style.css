@@ -1067,19 +1067,35 @@ img, svg {
   color: var(--text-main);
 }
 
+.contact-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
 .copy-btn {
   background: none;
   border: none;
   color: var(--text-muted);
   cursor: pointer;
-  margin-left: auto;
   padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: var(--transition-smooth);
 }
 
 .copy-btn:hover {
   color: var(--accent);
-  transform: scale(1.15);
+  background: rgba(56, 189, 248, 0.1);
+  transform: scale(1.1);
+}
+
+.contact-action-link {
+  white-space: nowrap;
 }
 
 /* Contact Form */
