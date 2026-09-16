@@ -302,15 +302,51 @@ img, svg {
   border-color: var(--border-hover);
 }
 
-/* Mobile Toggle */
+/* Mobile Toggle & Backdrop */
 .mobile-nav-toggle {
   display: none;
-  background: none;
-  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
   color: var(--text-main);
   cursor: pointer;
   padding: 8px;
+  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
 }
+
+.mobile-nav-toggle:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: var(--accent);
+}
+
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.nav-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Column Span Utility Classes */
+.col-span-12 { grid-column: span 12; }
+.col-span-8 { grid-column: span 8; }
+.col-span-7 { grid-column: span 7; }
+.col-span-6 { grid-column: span 6; }
+.col-span-5 { grid-column: span 5; }
+.col-span-4 { grid-column: span 4; }
 
 /* ==========================================================================
    Bento Grid Architecture

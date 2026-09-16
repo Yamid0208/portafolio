@@ -87,19 +87,63 @@ function initMobileNav() {
 
   if (!toggleBtn || !navMenu) return;
 
-  toggleBtn.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('open');
-    toggleBtn.setAttribute('aria-expanded', isOpen);
-    toggleBtn.innerHTML = isOpen 
-      ? `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`
-      : `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+  // Create overlay backdrop if not exists
+  let backdrop = document.querySelector('.nav-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  const openIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+  const closeIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+
+  function toggleMenu(forceClose = false) {
+    const isCurrentlyOpen = navMenu.classList.contains('open');
+    const shouldOpen = forceClose ? false : !isCurrentlyOpen;
+
+    if (shouldOpen) {
+      navMenu.classList.add('open');
+      backdrop.classList.add('active');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      toggleBtn.innerHTML = closeIcon;
+      document.body.style.overflow = 'hidden';
+    } else {
+      navMenu.classList.remove('open');
+      backdrop.classList.remove('active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.innerHTML = openIcon;
+      document.body.style.overflow = '';
+    }
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleMenu();
   });
 
-  // Close when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!navMenu.contains(e.target) && !toggleBtn.contains(e.target) && navMenu.classList.contains('open')) {
-      navMenu.classList.remove('open');
-      toggleBtn.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+  backdrop.addEventListener('click', () => {
+    toggleMenu(true);
+  });
+
+  // Close when clicking on any nav link
+  const navLinks = navMenu.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMenu(true);
+    });
+  });
+
+  // Prevent clicks inside nav menu from closing it
+  navMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close when pressing Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+      toggleMenu(true);
     }
   });
 }
